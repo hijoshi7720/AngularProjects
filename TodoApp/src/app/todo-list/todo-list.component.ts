@@ -17,12 +17,12 @@ export class TodoListComponent implements OnInit {
 
   constructor() { }
 
-  onRemove(todo:Todo)
+  onRemoveTodo(todo:Todo)
   {
 this.remove.emit(todo);
   }
 
-  onToggleComplete(todo:Todo)
+  onToggleTodoComplete(todo:Todo)
   {
 this.toggleComplete.emit(todo);
   }
