@@ -1,7 +1,7 @@
 <section class='todoapp'>
     <header class='header'>
 <h1>Todos</h1>
-<input class="new-todo" placeholder="What is the task" [(ngModel)]="newTodo.title" (keyup.Enter)="addTodo()">
+<input class="new-todo" placeholder="What needs to be done?" [(ngModel)]="newTodo.title" (keyup.Enter)="addTodo()">
     </header>
 
     <section class="main" *ngIf="todos1.length > 0">
