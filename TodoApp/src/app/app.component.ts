@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import{TodoDataService} from './todo-data.service'
 import { Todo } from './todo';
+import { Observable } from 'rxjs';
+import { strict } from 'assert';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +19,11 @@ export class AppComponent {
   constructor(private todoDataService:TodoDataService)
   {
 
+  }
+
+  showData():Observable< string>
+  {
+   return this.todoDataService.getData().subscribe<string>();
   }
 
   // addTodo()
