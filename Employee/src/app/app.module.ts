@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import{EmployeeComponent} from './employee.component';
 
 @NgModule({
   declarations: [
@@ -12,10 +11,9 @@ import{EmployeeComponent} from './employee.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    EmployeeComponent
+    AppRoutingModule,   
   ],
-  providers: [EmployeeComponent],
+  providers: [],
   bootstrap: [AppComponent],
   exports:[
     

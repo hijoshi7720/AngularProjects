@@ -1,11 +1,14 @@
 <div>
     <ul>
-        <li *ngFor="let employee of employees">
-            {{employee.Id}}
-            {{employee.Name}}           
+        <li *ngFor="let emp of employees">
+            {{emp.Id}}
+            {{emp.Name}}           
         </li>        
-    </ul>
-    <button (click)="getEmployeeById(1)">SHOW</button>
-    {{employee.Id}}
+    </ul>   
 </div>
+
+<div>
+    <button (click)="getEmployeeById(2)">SHOW</button>  
+</div>
+<h1> {{employee.Name}}</h1>
 

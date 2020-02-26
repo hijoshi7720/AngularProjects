@@ -15,13 +15,7 @@ export class AppComponent {
 
 constructor(public emoloyeeService:EmployeeService)
 {
-  this.getEmployes();
+ 
 }
- getEmployes()
-{
-   this.emoloyeeService.getAllEmployee().subscribe( data => { this.Emp = data; console.log()});
-}
-
-
-
+ 
 }
