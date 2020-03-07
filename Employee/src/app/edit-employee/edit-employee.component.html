@@ -1,0 +1,21 @@
+<form [formGroup]="formData" (ngSubmit)="onSubmit(formData.value)" >
+
+    <div>
+    <label >Name</label><br>
+    <input type="text" name="name" value="" formControlName ="name">
+</div>
+
+<div>
+    <label>Email ID</label><br>
+    <input type="text" name="emailId" placeholder="emailId" formControlName ="emailId">
+</div>
+
+<div>   
+    <input type="submit"  title="">
+</div>
+
+</form>
+
+
+
+

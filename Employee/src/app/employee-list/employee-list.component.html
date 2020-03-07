@@ -1,0 +1,42 @@
+<div class="panel panel-primary">
+    <div class="panel-heading" style="text-align: center; font-weight: bold;">Employee List</div>
+    
+    <div class="panel-body">
+
+        <table class="tabel">
+
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email Id</th>
+                    <th>Operation</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                <td>{{employee.Id}}</td>
+                <td>{{employee.Name}}</td>
+                <td>{{employee.EmailId}}</td>
+               <td>
+                <button class="button btn-success" [routerLink]="['edit']">Edit</button> &nbsp;
+                <!-- <button [routerLink]="['edit']">Delete</button> -->
+                  
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <div class="panel-footer">
+
+        <button class="button btn-success" [routerLink]="['insert']">Create Employee</button>
+
+    </div>
+
+    <!-- <a [routerLink]="[insert]"><Insert</a> -->
+
+</div>
